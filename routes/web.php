@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', 'PagesController@index');
+Route::get('/aboutus', 'PagesController@aboutus');
+Route::get('/contactus', 'PagesController@contactus');
+
